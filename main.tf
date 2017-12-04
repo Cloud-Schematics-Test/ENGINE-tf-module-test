@@ -8,7 +8,7 @@ variable "sleepy_time" {
   default     = 10
 }
 
-module "mymodule"
+module "mymodule" {
   source = "github.com/Cloud-Schematics-Test/ENGINE-tf-cloudless-sleepy"
   sleepy_time = "${var.sleepy_time}"
   sample_var = "${var.sample_var}"
